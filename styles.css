@@ -58,6 +58,11 @@ td {
     white-space: nowrap;
 }
 
+.delete-button {
+    width: 70%;
+    height: 30px;
+}
+
 .list {
     background-color: rgb(24, 24, 24);
 }

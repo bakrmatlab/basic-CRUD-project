@@ -21,6 +21,7 @@ class Item {
         this.elements[3].innerHTML = this.phone;
         this.elements[4].innerHTML = this.email;
         this.elements[5].innerHTML = this.address;
+        this.elements.push(document.createElement('th'));
     }
 
     get() {
@@ -28,6 +29,17 @@ class Item {
 
         let container = document.createElement('tr');
         container.className = 'item-labels';
+
+        let deleteButton = document.createElement('button');
+        deleteButton.innerHTML = 'Delete';
+        deleteButton.className = 'delete-button';
+
+        deleteButton.onclick = () => {
+            container.remove();
+        };
+
+        this.elements[6].style.alignContent = 'center';
+        this.elements[6].appendChild(deleteButton);
 
         this.elements.map((element) => {
             container.appendChild(element);
