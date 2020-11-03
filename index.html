@@ -19,20 +19,33 @@
 
         <div class="wrapper">
             <!--CHANGE THIS TO TABLE-->
-            <div id="table" class="container">
-                <div class="labels">
-                    <p>ID</p>
-                    <p>FIRST</p>
-                    <p>LAST</p>
-                    <p>PHONE</p>
-                    <p>EMAIL</p>
-                    <p>ADDRESS</p>
-                </div>
 
-                <div class="list"></div>
+            <div class="container">
+                <table id="table" class="table">
+                    <tr class="labels">
+                        <th>ID</th>
+                        <th>FIRST</th>
+                        <th>LAST</th>
+                        <th>PHONE</th>
+                        <th>EMAIL</th>
+                        <th>ADDRESS</th>
+                        <th>ACTIONS</th>
+                    </tr>
+                </table>
+            </div>
+            <div class="form">
+                <label for="fname">First name:</label>
+                <input type="text" id="fname" name="fname" /><br />
+                <label for="lname">Last name:</label>
+                <input type="text" id="lname" name="lname" /><br />
+                <label for="fname">Phone#:</label>
+                <input type="text" id="fname" name="fname" /><br />
+                <label for="lname">E-mail:</label>
+                <input type="text" id="lname" name="lname" /><br />
+                <label for="lname">Adress:</label>
+                <input type="text" id="lname" name="lname" /><br />
             </div>
         </div>
-
         <script src="js/App.js"></script>
     </body>
 </html>

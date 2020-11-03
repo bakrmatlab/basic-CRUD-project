@@ -5,7 +5,7 @@ let table = document.getElementById('table');
 let item = document.createElement('div');
 
 // set text of element
-item.innerHTML = 'Hello World';
+item.innerHTML = '';
 
 // set css class of item
 item.className = 'item';
