@@ -18,11 +18,9 @@
         <nav><span class="title">CRUD Project</span></nav>
 
         <div class="wrapper">
-            <!--CHANGE THIS TO TABLE-->
-
             <div class="container">
                 <table id="table" class="table">
-                    <tr class="labels">
+                    <tr class="header-labels">
                         <th>ID</th>
                         <th>FIRST</th>
                         <th>LAST</th>
@@ -34,18 +32,34 @@
                 </table>
             </div>
             <div class="form">
-                <label for="fname">First name:</label>
-                <input type="text" id="fname" name="fname" /><br />
-                <label for="lname">Last name:</label>
-                <input type="text" id="lname" name="lname" /><br />
-                <label for="fname">Phone#:</label>
-                <input type="text" id="fname" name="fname" /><br />
-                <label for="lname">E-mail:</label>
-                <input type="text" id="lname" name="lname" /><br />
-                <label for="lname">Adress:</label>
-                <input type="text" id="lname" name="lname" /><br />
+                <div class="input-container">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="fname" />
+                </div>
+
+                <div class="input-container">
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lname" />
+                </div>
+
+                <div class="input-container">
+                    <label for="phone">Phone # </label>
+                    <input type="text" id="phone" name="phone" />
+                </div>
+
+                <div class="input-container">
+                    <label for="email">E-Mail</label>
+                    <input type="text" id="email" name="email" />
+                </div>
+
+                <div class="input-container">
+                    <label for="address">Address</label>
+                    <input type="text" id="address" name="address" />
+                </div>
+
+                <button type="button" id="addButton">Add</button>
             </div>
         </div>
-        <script src="js/App.js"></script>
+        <script src="js/App.js" type="text/javascript"></script>
     </body>
 </html>

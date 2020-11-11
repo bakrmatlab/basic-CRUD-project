@@ -28,15 +28,15 @@ table {
 .wrapper {
     display: flex;
     justify-content: center;
-    align-items: center;
     margin-top: 100px;
+    align-items: flex-start;
 }
 
 .table {
     background-color: rgb(24, 24, 24);
 }
 
-.labels {
+.header-labels {
     height: 6vh;
     background-color: rgb(53, 53, 53);
     color: white;
@@ -48,10 +48,42 @@ table {
     width: 60%;
 }
 
-.form{
+.form {
     color: white;
     background-color: rgb(26, 26, 26);
-    width: 20%; 
-    justify-content: center;
+    width: 20%;
     align-items: center;
+    margin-left: 40px;
+    padding: 20px;
 }
+
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+
+.form button {
+    font-size: 25px;
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+    height: 50px;
+}
+
+.info-labels {
+    height: 6vh;
+    background-color: rgb(41, 41, 41);
+    color: white;
+}
+
+.info-labels td {
+    padding: 20px;
+}
+
+.info-labels button {
+    width: 100%;
+    height: 40px;
+}
+
